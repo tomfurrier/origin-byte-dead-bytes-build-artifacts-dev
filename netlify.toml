@@ -1,0 +1,23 @@
+[[headers]]
+  for = "/unitybuild/*.data.gz"
+  [headers.values]
+    Content-Encoding = "gzip"
+    Content-Type = "application/octet-stream"
+
+[[headers]]
+  for = "/unitybuild/*.wasm.gz"
+  [headers.values]
+    Content-Encoding = "gzip"
+    Content-Type = "application/wasm"
+
+[[headers]]
+  for = "/unitybuild/*.js"
+  [headers.values]
+    Content-Encoding = "js"
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/unitybuild/*.js.gz"
+  [headers.values]
+    Content-Encoding = "gzip"
+    Content-Type = "application/javascript"
